@@ -1,0 +1,12 @@
+.drop-nav{
+
+}
+
+.nav-item{
+    height: 0em;
+    transition: 0.5s;
+}
+
+.open{
+    height: 2em;
+}
