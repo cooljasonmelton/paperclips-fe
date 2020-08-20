@@ -1,4 +1,6 @@
 import React from 'react';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router';
+
 
 // styling
 import './App.css';
@@ -8,10 +10,12 @@ import Menu from './menu/Menu';
 
 const App = () => {
   return (
-    <div className="App">
-      <Menu/>
+    <BrowserRouter>
+      <div className="App">
+        <Menu/>
 
-    </div>
+      </div>
+    </BrowserRouter>
   );
 }
 
