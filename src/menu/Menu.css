@@ -1,12 +1,24 @@
 .drop-nav{
+    position: absolute;
+
+}
+
+.nav-button{
+    position: absolute;
+    z-index: 1;
 
 }
 
 .nav-item{
-    height: 0em;
+    position: absolute;
+    top: 0;
+    height: 2em;
     transition: 0.5s;
 }
 
-.open{
-    height: 2em;
+.open-1{
+    top: 2em;
+}
+.open-2{
+    top: 4em;
 }

@@ -13,9 +13,9 @@ const Menu = props => {
     props.history.push(e.target.textContent.toLowerCase())
   }
 
-  const setNavClass = () => {
+  const setNavClass = num => {
     const classArr = ["nav-item"]
-    if (openDrop) classArr.push('open')
+    if (openDrop) classArr.push(`open-${num}`)
     return classArr.join(' ')
   }
 
@@ -25,9 +25,10 @@ const Menu = props => {
         <p>paperclips</p>
       </div>
 
+      <button className="nav-button" onClick={()=>setOpenDrop(!openDrop)}> paperclips </button>
       <div className="drop-nav">
-        <div className={setNavClass()} onClick={e=>navigateSite(e)}>Write</div>
-        <div className={setNavClass()} onClick={e=>navigateSite(e)}>Analytics</div>
+        <div className={setNavClass(1)} onClick={e=>navigateSite(e)}>Write</div>
+        <div className={setNavClass(2)} onClick={e=>navigateSite(e)}>Analytics</div>
       </div>
 
       
