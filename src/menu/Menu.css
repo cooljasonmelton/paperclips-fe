@@ -1,7 +1,7 @@
 .Menu{
     width: 100%;
 
-    padding: 2em 4em 0 0;
+    padding: 2em 10em 0 0;
     
     display: flex;
     flex-direction: column;
@@ -16,7 +16,7 @@
     position: relative;
     z-index: 1;
     
-    padding: 0.3em 2em;
+    padding: 0.5em 2em;
     
     width: 9em;
 
@@ -40,7 +40,7 @@
     
     max-width: 9em;
 
-    padding: 0.3em 2em;
+    padding: 0.5em 2em;
 
     background-color: orange;
     border-radius: 1em;
@@ -56,8 +56,8 @@
 }
 
 .open-1{
-    top: 2.0em;
+    top: 2.5em;
 }
 .open-2{
-    top: 4.0em;
+    top: 5em;
 }
