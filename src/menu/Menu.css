@@ -1,11 +1,11 @@
 .Menu{
     width: 100%;
+
     padding: 2em 4em 0 0;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: red;
-
 }
 
 .drop-nav{
