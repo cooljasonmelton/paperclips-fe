@@ -4,29 +4,42 @@
     display: flex;
     flex-direction: column;
     align-items: flex-end;
+    background-color: red;
+
 }
 
 .drop-nav{
     position: relative;
+    background-color: red;
 }
 
 .nav-button{
     position: relative;
     z-index: 1;
+    width: 100%;
     font-size: 1em;
-
 }
 
 .nav-item{
     position: absolute;
     top: 0;
-    height: 2em;
+    height: 1.1em;
     transition: 0.5s;
+    width: 100%;
+    /* border: 1px solid pink; */
+    background-color: red;
+
+}
+
+.nav-item:hover{
+    opacity: 0.7;
 }
 
 .open-1{
-    top: 2em;
+    top: 2.5em;
+
 }
 .open-2{
-    top: 4em;
+    top: 4.5em;
+
 }
