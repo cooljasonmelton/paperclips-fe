@@ -23,14 +23,17 @@ const Menu = props => {
   return (
     <div className="Menu">
       <div className="drop-nav">
-        <button className="nav-button" onClick={()=>setOpenDrop(!openDrop)}> Paperclips </button>
+        <button className="nav-button" 
+          onClick={()=>setOpenDrop(!openDrop)}> 
+          paperclips 
+        </button>
         <div className={setNavClass(1)} 
           onClick={e=>navigateSite(e)}>
-           <div className="nav-text">Write</div> 
+           write
         </div>
         <div className={setNavClass(2)} 
           onClick={e=>navigateSite(e)}>
-            Analytics
+            analytics
         </div>
       </div>   
     </div>
