@@ -24,6 +24,7 @@
     position: absolute;
     top: 0;
     height: 1.1em;
+    padding: 0.2em;
     transition: 0.5s;
     width: 100%;
     /* border: 1px solid pink; */
