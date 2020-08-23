@@ -22,10 +22,8 @@ const Menu = props => {
 
   return (
     <div className="Menu">
-      <p>paperclips</p>
-
       <div className="drop-nav">
-        <button className="nav-button" onClick={()=>setOpenDrop(!openDrop)}> paperclips </button>
+        <button className="nav-button" onClick={()=>setOpenDrop(!openDrop)}> Paperclips </button>
         <div className={setNavClass(1)} onClick={e=>navigateSite(e)}>Write</div>
         <div className={setNavClass(2)} onClick={e=>navigateSite(e)}>Analytics</div>
       </div>   
