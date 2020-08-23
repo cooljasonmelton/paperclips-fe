@@ -1,4 +1,8 @@
-import React from 'react';
+import React, { useState } from 'react';
+
+// functions
+import { prettyDate } from "../functions/dateFunctions"
+import { getWordCount } from "../functions/wordCountFunctions"
 
 // styling
 import './EntryContainer.css';
@@ -6,11 +10,17 @@ import './EntryContainer.css';
 // components
 
 const EntryContainer = () => {
+  const [entryText, setEntryText] = useState('')
   return (
     <div className="EntryContainer">
-      entry
-
-
+      <textarea className="entry-ta" 
+        autoFocus 
+        onChange={e=>setEntryText(e.target.value)} 
+        value={entryText}/>
+      
+      <div className="entry-info"> 
+        {prettyDate()} | count: {getWordCount(entryText)} 
+      </div>
     </div>
   );
 }

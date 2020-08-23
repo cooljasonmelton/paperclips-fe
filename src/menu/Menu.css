@@ -1,34 +1,54 @@
 .Menu{
     width: 100%;
-    padding: 2em 4em 0 0;
+
+    padding: 2em 10em 0 0;
+    
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    background-color: red;
-
 }
 
 .drop-nav{
     position: relative;
-    background-color: red;
 }
 
 .nav-button{
     position: relative;
     z-index: 1;
-    width: 100%;
+    
+    padding: 0.5em 2em;
+    
+    width: 9em;
+
+    border: none;
+    border-radius: 1em;
+    
+    background-color: none;
+
     font-size: 1em;
+}
+
+.nav-button:focus {
+    background-color: #ffff00;
+    border-radius: 1em;
+    outline: 0;
 }
 
 .nav-item{
     position: absolute;
     top: 0;
-    height: 1.1em;
-    transition: 0.5s;
-    width: 100%;
-    /* border: 1px solid pink; */
-    background-color: red;
+    
+    max-width: 9em;
 
+    padding: 0.5em 2em;
+
+    background-color: orange;
+    border-radius: 1em;
+
+    font-size: 1em;
+    text-align: center;
+
+    transition: 0.5s;
 }
 
 .nav-item:hover{
@@ -37,9 +57,7 @@
 
 .open-1{
     top: 2.5em;
-
 }
 .open-2{
-    top: 4.5em;
-
+    top: 5em;
 }

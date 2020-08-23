@@ -1,0 +1,28 @@
+.EntryContainer{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.entry-ta{
+    width: 100%;
+    min-height: 60vh;
+
+    padding: 1.5em 2em;
+    margin: 1em;
+
+    border: none;
+    border-radius: 1em;
+    box-shadow: 1px 1px 5px black;
+
+    font-size: 1.5em;
+    outline: none;
+    resize: none;
+    overflow: auto; 
+}
+
+.entry-ta:focus{
+    background-color: pink;
+}
