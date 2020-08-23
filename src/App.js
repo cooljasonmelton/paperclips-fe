@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter } from 'react-router-dom';
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 
 // styling
@@ -13,6 +13,10 @@ const App = () => {
     <BrowserRouter>
       <div className="App">
         <Menu/>
+
+        <Switch>
+          
+        </Switch>
 
       </div>
     </BrowserRouter>
