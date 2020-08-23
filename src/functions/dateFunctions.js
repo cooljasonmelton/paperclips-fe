@@ -17,7 +17,7 @@ export const dateEntryId = () => {
 export const prettyDate = () => {
     let today = new Date();
     let thisDay = String(today.getDate())
-    let months = ['January', 'February', 'March', 'April', 'May', 'June', 'July', 'August', 'September', 'October', 'November', 'December'];
+    let months = ['january', 'february', 'march', 'april', 'may', 'june', 'july', 'august', 'september', 'october', 'november', 'december'];
     let thisMonth = months[today.getMonth()]
     let yyyy = today.getFullYear();
     return today = thisMonth + ' ' + thisDay + ', ' + yyyy;
