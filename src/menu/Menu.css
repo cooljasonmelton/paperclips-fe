@@ -10,26 +10,45 @@
 
 .drop-nav{
     position: relative;
-    background-color: red;
 }
 
 .nav-button{
     position: relative;
     z-index: 1;
-    width: 100%;
+    
+    padding: 0.3em 2em;
+    
+    width: 9em;
+
+    border: none;
+    border-radius: 1em;
+    
+    background-color: none;
+
     font-size: 1em;
+}
+
+.nav-button:focus {
+    background-color: #ffff00;
+    border-radius: 1em;
+    outline: 0;
 }
 
 .nav-item{
     position: absolute;
     top: 0;
-    height: 1.1em;
-    padding: 0.2em;
-    transition: 0.5s;
-    width: 100%;
-    /* border: 1px solid pink; */
-    background-color: red;
+    
+    max-width: 9em;
 
+    padding: 0.3em 2em;
+
+    background-color: orange;
+    border-radius: 1em;
+
+    font-size: 1em;
+    text-align: center;
+
+    transition: 0.5s;
 }
 
 .nav-item:hover{
@@ -37,10 +56,8 @@
 }
 
 .open-1{
-    top: 2.5em;
-
+    top: 2.0em;
 }
 .open-2{
-    top: 4.5em;
-
+    top: 4.0em;
 }
