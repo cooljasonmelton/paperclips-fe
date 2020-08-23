@@ -8,6 +8,7 @@ import './EntryContainer.css';
 const EntryContainer = () => {
   return (
     <div className="EntryContainer">
+      entry
 
 
     </div>

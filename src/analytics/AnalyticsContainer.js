@@ -8,6 +8,7 @@ import './AnalyticsContainer.css';
 const AnalyticsContainer = () => {
   return (
     <div className="AnalyticsContainer">
+      analytics
 
 
     </div>

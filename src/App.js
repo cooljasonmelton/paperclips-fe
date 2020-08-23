@@ -7,6 +7,8 @@ import './App.css';
 
 // components
 import Menu from './menu/Menu';
+import AnalyticsContainer from './analytics/AnalyticsContainer'
+import EntryContainer from './writing/EntryContainer'
 
 const App = () => {
   return (
@@ -15,7 +17,9 @@ const App = () => {
         <Menu/>
 
         <Switch>
-          
+          <Route path="/write" component={EntryContainer} />
+          <Route path="/analytics" component={AnalyticsContainer} />
+
         </Switch>
 
       </div>
