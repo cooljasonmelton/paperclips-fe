@@ -21,8 +21,20 @@
     outline: none;
     resize: none;
     overflow: auto; 
+
 }
 
-.entry-ta:focus{
-    background-color: pink;
+@keyframes entry-focus {
+    0% {box-shadow: 1px 1px 5px black}
+    33% {box-shadow: 25px 25px 25px red}
+    66% {box-shadow: -25px -25px 25px purple}
+    100% {box-shadow: 1px 1px 5px black}
 }
+
+.entry-ta:valid{
+    /* background-color: pink; */
+    animation-name: entry-focus;
+    animation-duration: 2s;
+}
+
+
