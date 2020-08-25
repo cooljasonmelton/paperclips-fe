@@ -2,17 +2,18 @@
     width: 100%;
     min-height: 50vh;
 
+    margin-top: 2em;
+
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
 }
 
-
 .analytics-item{
-    margin: 1.5em;
+    margin: 1em;
     padding: 1em;
     border: 1px solid gray;
-    box-shadow: 2px 2px 5px gray;
+    box-shadow: 1px 2px 5px gray;
 }
 
 .graph{
@@ -20,7 +21,6 @@
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: span 3;
-
 }
 
 .calendar{
@@ -28,4 +28,26 @@
     grid-column-end: span 2;
     grid-row-start: 1;
     grid-row-end: span 3;
+}
+
+
+@media only screen and (max-width: 44em) {
+    .AnalyticsContainer{
+        grid-template-columns: 100%;
+        grid-template-rows: auto;
+    }
+
+    .graph{
+        grid-column-start: auto;
+        grid-column-end: span 1;
+        grid-row-start: auto;
+        grid-row-end: span 1;
+    }
+    
+    .calendar{
+        grid-column-start: auto;
+        grid-column-end: span 1;
+        grid-row-start: auto;
+        grid-row-end: span 1;
+    }    
 }
