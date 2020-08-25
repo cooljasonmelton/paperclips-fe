@@ -1,0 +1,31 @@
+.AnalyticsContainer{
+    width: 100%;
+    min-height: 50vh;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
+}
+
+
+.analytics-item{
+    margin: 1.5em;
+    padding: 1em;
+    border: 1px solid gray;
+    box-shadow: 2px 2px 5px gray;
+}
+
+.graph{
+    grid-column-start: 1;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+
+}
+
+.calendar{
+    grid-column-start: 3;
+    grid-column-end: span 2;
+    grid-row-start: 1;
+    grid-row-end: span 3;
+}

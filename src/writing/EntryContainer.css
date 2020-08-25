@@ -8,14 +8,14 @@
 
 .entry-ta{
     width: 100%;
-    min-height: 60vh;
+    min-height: 70vh;
 
     padding: 1.5em 2em;
     margin: 1em;
 
     border: none;
-    border-radius: 1em;
-    box-shadow: 1px 1px 5px black;
+    border-radius: 0.5em;
+    box-shadow: 1px 1px 3px black;
 
     font-size: 1.5em;
     outline: none;
@@ -25,10 +25,10 @@
 }
 
 @keyframes entry-focus {
-    0% {box-shadow: 1px 1px 5px black}
+    0% {box-shadow: 1px 1px 3px black}
     33% {box-shadow: 10px 10px 10px red}
     66% {box-shadow: -10px -10px 10px purple}
-    100% {box-shadow: 1px 1px 5px black}
+    100% {box-shadow: 1px 1px 3px black}
 }
 
 .entry-ta:valid{

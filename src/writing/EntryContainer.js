@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
 // functions
-import { prettyDate } from "../functions/dateFunctions"
+import { currentDate } from "../functions/dateFunctions"
 import { getWordCount } from "../functions/wordCountFunctions"
 
 // styling
@@ -19,7 +19,7 @@ const EntryContainer = () => {
         value={entryText}/>
       
       <div className="entry-info"> 
-        {prettyDate()} | count: {getWordCount(entryText)} 
+        {currentDate()} | count: {getWordCount(entryText)} 
       </div>
     </div>
   );
