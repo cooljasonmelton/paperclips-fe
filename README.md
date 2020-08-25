@@ -1,5 +1,12 @@
 TO DO:
 
+- pick out colors f.e.
+- set up back end
+- set up log in / sign up f.e.
+- set up auth & JWT
+- i fullcalendar
+- i chart.js
+
 
 THE PLAN:
 - create front end
