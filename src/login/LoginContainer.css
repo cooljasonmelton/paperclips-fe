@@ -1,3 +1,4 @@
+/* LOGIN CONTAINER */
 .LoginContainer{
     position: relative;
     
@@ -7,6 +8,9 @@
     margin-top: 3em;
     
     border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
+
     background-color: pink;
     background-image: url('../images/patterns/bwcircleclear.png')
 }
@@ -21,6 +25,8 @@
     height: 100%;
 
     border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
 
     background-color: black;
     color: lightgray;
@@ -37,17 +43,19 @@
     height: 100%;
 
     border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
 
     background-color: lightgray;
 
     transition: 2s;
 }
 
-.switch-form{
+.switch-c-form{
     left: 0%;
 }
 
-.switch-banner{
+.switch-c-banner{
     left: 65%;
 }
 
@@ -57,3 +65,32 @@
         width: 100%;
     }
 }
+
+/* BANNER SIDE */
+.BannerSide{
+    position: relative;
+    color: lightgray;
+}
+
+.banner-signup{
+    position: absolute;
+
+    top: 100em;
+
+    color: lightgray;
+}
+
+.banner-login{
+    position: absolute;
+    left: -5.5em;
+    top: -10em;
+
+    width: 10em;
+    height: 15em;
+
+    text-align: center;
+    color: lightgray;
+
+}
+
+/* FORM SIDE */

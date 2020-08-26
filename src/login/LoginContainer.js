@@ -4,29 +4,27 @@ import React, { useState } from 'react';
 import './LoginContainer.css';
 
 // components
+import BannerSide from './BannerSide';
 
 const LoginContainer = () => {
   const [signIn, setSignIn] = useState(false)
 
   const setBannerClass = () => {
     const classArr = ["banner-side cfb"]
-    if (signIn) classArr.push("switch-banner")
+    if (signIn) classArr.push("switch-c-banner")
     return classArr.join(" ")
   }
 
   const setFormClass = () => {
     const classArr = ["form-side cfb"]
-    if (signIn) classArr.push("switch-form")
+    if (signIn) classArr.push("switch-c-form")
     return classArr.join(" ")
   }
 
   return (
     <div className="LoginContainer">
       <div className={setBannerClass()}>
-        Banner
-        <button onClick={()=> setSignIn(!signIn)}> 
-          {signIn ? "Sign In" : "Create an Account"}
-        </button>
+        <BannerSide signIn={signIn} setSignIn={setSignIn}/>
       </div>
       <div className={setFormClass()}>
         Form
