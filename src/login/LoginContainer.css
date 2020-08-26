@@ -1,3 +1,4 @@
+/* LOGIN CONTAINER */
 .LoginContainer{
     position: relative;
     
@@ -6,7 +7,12 @@
     
     margin-top: 3em;
     
-    border: 1px solid black;
+    border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
+
+    background-color: pink;
+    background-image: url('../images/patterns/bwcircleclear.png')
 }
 
 .banner-side{
@@ -18,10 +24,14 @@
     width: 35%;
     height: 100%;
 
+    border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
+
     background-color: black;
     color: lightgray;
 
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .form-side{
@@ -32,16 +42,20 @@
     width: 65%;
     height: 100%;
 
+    border-radius: 0.5em;
+    border: 1px solid gray;
+    box-shadow: 1px 2px 2px gray;
+
     background-color: lightgray;
 
-    transition: 2s;
+    transition: 1.5s;
 }
 
-.switch-form{
+.switch-c-form{
     left: 0%;
 }
 
-.switch-banner{
+.switch-c-banner{
     left: 65%;
 }
 
@@ -51,3 +65,49 @@
         width: 100%;
     }
 }
+
+/* BANNER SIDE */
+.BannerSide{
+    position: relative;
+    color: lightgray;
+    height: 100%;
+    width: 100%;
+}
+
+.banner-signup{
+    position: absolute;
+    top: 100%;
+    width: 100%;
+
+    text-align: center;
+    color: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+
+}
+
+.banner-login{
+    position: absolute;
+    top: 37%;
+    width: 100%;
+
+    text-align: center;
+    color: lightgray;
+    transition: 1s;
+}
+
+.switch-banner-signup{
+    top: 37%;
+    opacity: 1;
+    visibility: visible;
+}
+.switch-banner-login{
+    top: -100%;
+    opacity: 0;
+    visibility: hidden;
+
+}
+
+
+/* FORM SIDE */
