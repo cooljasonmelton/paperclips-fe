@@ -31,7 +31,7 @@
     background-color: black;
     color: lightgray;
 
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .form-side{
@@ -48,7 +48,7 @@
 
     background-color: lightgray;
 
-    transition: 2s;
+    transition: 1.5s;
 }
 
 .switch-c-form{
@@ -70,27 +70,44 @@
 .BannerSide{
     position: relative;
     color: lightgray;
+    height: 100%;
+    width: 100%;
 }
 
 .banner-signup{
     position: absolute;
+    top: 100%;
+    width: 100%;
 
-    top: 100em;
-
+    text-align: center;
     color: lightgray;
+    opacity: 0;
+    visibility: hidden;
+    transition: 1s;
+
 }
 
 .banner-login{
     position: absolute;
-    left: -5.5em;
-    top: -10em;
-
-    width: 10em;
-    height: 15em;
+    top: 37%;
+    width: 100%;
 
     text-align: center;
     color: lightgray;
+    transition: 1s;
+}
+
+.switch-banner-signup{
+    top: 37%;
+    opacity: 1;
+    visibility: visible;
+}
+.switch-banner-login{
+    top: -100%;
+    opacity: 0;
+    visibility: hidden;
 
 }
+
 
 /* FORM SIDE */
