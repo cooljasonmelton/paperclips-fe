@@ -1,15 +1,40 @@
 .LoginContainer{
     position: relative;
+    
+    width: 50%;
+    height: 60%;
+    
+    margin-top: 3em;
+    
     border: 1px solid black;
-    width: 60%;
-    height: 30%;
-
 }
 
 .banner-side{
+    position: absolute;
+    left: 0;
 
+    width: 35%;
+    height: 100%;
+
+    background-color: black;
+    color: gray
 }
 
 .form-side{
-    
+    position: absolute;
+    left: 35%;
+
+    width: 65%;
+    height: 100%;
+
+    background-color: gray;
+
+}
+
+@media only screen and (max-width: 44em) {
+    .LoginContainer{
+        width: 100%;
+
+    }
+
 }
