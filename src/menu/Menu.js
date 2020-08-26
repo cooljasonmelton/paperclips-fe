@@ -10,7 +10,9 @@ const Menu = props => {
   const [openDrop, setOpenDrop] = useState(false)
 
   const navigateSite = e => {
-    props.history.push(e.target.textContent.toLowerCase())
+    let destination = e.target.textContent.toLowerCase()
+    if (destination === "sign out") props.history.push("/")
+    else props.history.push(destination)
     setOpenDrop(false)
   }
 
@@ -34,6 +36,10 @@ const Menu = props => {
         <div className={setNavClass(2)} 
           onClick={e=>navigateSite(e)}>
             analytics
+        </div>
+        <div className={setNavClass(3)} 
+          onClick={e=>navigateSite(e)}>
+            sign out
         </div>
       </div>   
     </div>

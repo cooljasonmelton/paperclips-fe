@@ -1,0 +1,53 @@
+.LoginContainer{
+    position: relative;
+    
+    width: 50%;
+    height: 60%;
+    
+    margin-top: 3em;
+    
+    border: 1px solid black;
+}
+
+.banner-side{
+    position: absolute;
+    z-index: 1;
+    top: 0;
+    left: 0;
+
+    width: 35%;
+    height: 100%;
+
+    background-color: black;
+    color: lightgray;
+
+    transition: 2s;
+}
+
+.form-side{
+    position: absolute;
+    top: 0;
+    left: 35%;
+
+    width: 65%;
+    height: 100%;
+
+    background-color: lightgray;
+
+    transition: 2s;
+}
+
+.switch-form{
+    left: 0%;
+}
+
+.switch-banner{
+    left: 65%;
+}
+
+
+@media only screen and (max-width: 44em) {
+    .LoginContainer{
+        width: 100%;
+    }
+}

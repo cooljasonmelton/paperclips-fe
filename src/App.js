@@ -1,6 +1,7 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
+// router
+import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
 
 // styling
 import './App.css';
@@ -9,6 +10,7 @@ import './App.css';
 import Menu from './menu/Menu';
 import AnalyticsContainer from './analytics/AnalyticsContainer'
 import EntryContainer from './writing/EntryContainer'
+import LoginContainer from './login/LoginContainer'
 
 const App = () => {
   return (
@@ -22,7 +24,7 @@ const App = () => {
         <Switch>
           <Route path="/write" component={EntryContainer} />
           <Route path="/analytics" component={AnalyticsContainer} />
-
+          <Route path="/" component={LoginContainer} />
         </Switch>
 
       </div>
