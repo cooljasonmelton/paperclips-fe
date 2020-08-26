@@ -11,30 +11,43 @@
 
 .banner-side{
     position: absolute;
+    z-index: 1;
+    top: 0;
     left: 0;
 
     width: 35%;
     height: 100%;
 
     background-color: black;
-    color: gray
+    color: lightgray;
+
+    transition: 2s;
 }
 
 .form-side{
     position: absolute;
+    top: 0;
     left: 35%;
 
     width: 65%;
     height: 100%;
 
-    background-color: gray;
+    background-color: lightgray;
 
+    transition: 2s;
 }
+
+.switch-form{
+    left: 0%;
+}
+
+.switch-banner{
+    left: 65%;
+}
+
 
 @media only screen and (max-width: 44em) {
     .LoginContainer{
         width: 100%;
-
     }
-
 }
