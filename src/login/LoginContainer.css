@@ -51,9 +51,15 @@
 
 .BannerSide > div > h2{
     background-color: rgb(175, 224, 123);
-    box-shadow: 0px 0px 5px rgb(175, 224, 123);
+    border: 1px solid #538320;
+
     border-radius: 5em;
     padding: 1em 0;
+}
+
+.BannerSide > div > h5{
+
+    margin: 0.5em;
 }
 
 .form-side{
@@ -102,10 +108,12 @@
     top: 100%;
     width: 100%;
 
-    text-align: center;
     opacity: 0;
     visibility: hidden;
-    transition: 1s;
+    
+    text-align: center;
+
+    transition: opacity .2s, 1s;
 }
 
 .banner-login{
@@ -113,8 +121,10 @@
     top: 32%;
     width: 100%;
 
+    opacity: 1;
+
     text-align: center;
-    transition: 1s;
+    transition: opacity .1s, 1s;
 }
 
 .switch-banner-signup{

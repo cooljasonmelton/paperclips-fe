@@ -5,6 +5,7 @@ import './LoginContainer.css';
 
 // components
 import BannerSide from './BannerSide';
+import FormSide from './FormSide';
 
 const LoginContainer = () => {
   const [signIn, setSignIn] = useState(false)
@@ -27,7 +28,7 @@ const LoginContainer = () => {
         <BannerSide signIn={signIn} setSignIn={setSignIn}/>
       </div>
       <div className={setFormClass()}>
-        Form
+        <FormSide signIn={signIn} setSignIn={setSignIn}/>
       </div>
     </div>
   );
