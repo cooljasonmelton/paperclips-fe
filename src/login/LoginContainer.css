@@ -7,12 +7,12 @@
     
     margin-top: 3em;
     
-    border-radius: 0.5em;
-    border: 1px solid gray;
-    box-shadow: 1px 2px 2px gray;
+    border-radius: 1em;
+    box-shadow: 1px 2px 2px #DEF2C8;
 
-    background-color: pink;
-    background-image: url('../images/patterns/bwcircleclear.png')
+    background-color: #DEF2C8;
+    background-image: url('../images/patterns/bwcircleclear.png');
+    color: #780262;
 }
 
 .banner-side{
@@ -24,12 +24,14 @@
     width: 35%;
     height: 100%;
 
-    border-radius: 0.5em;
-    border: 1px solid gray;
-    box-shadow: 1px 2px 2px gray;
+    border-radius: 1em 0 0 1em;
+    border: 1px solid #538320;
+    box-shadow: 1px 2px 2px #538320;
 
-    background-color: black;
-    color: lightgray;
+    background-color: #AFE07B;
+    opacity: 0.7;
+
+    opacity: 0.95;
 
     transition: 1.5s;
 }
@@ -42,21 +44,23 @@
     width: 65%;
     height: 100%;
 
-    border-radius: 0.5em;
+    border-radius: 0 1em 1em 0;
     border: 1px solid gray;
     box-shadow: 1px 2px 2px gray;
 
-    background-color: lightgray;
+    background-color: #DEF2C8;
 
     transition: 1.5s;
 }
 
 .switch-c-form{
     left: 0%;
+    border-radius: 1em 0 0 1em;
 }
 
 .switch-c-banner{
     left: 65%;
+    border-radius: 0 1em 1em 0;
 }
 
 
@@ -69,7 +73,6 @@
 /* BANNER SIDE */
 .BannerSide{
     position: relative;
-    color: lightgray;
     height: 100%;
     width: 100%;
 }
@@ -80,11 +83,9 @@
     width: 100%;
 
     text-align: center;
-    color: lightgray;
     opacity: 0;
     visibility: hidden;
     transition: 1s;
-
 }
 
 .banner-login{
@@ -93,7 +94,6 @@
     width: 100%;
 
     text-align: center;
-    color: lightgray;
     transition: 1s;
 }
 
@@ -102,11 +102,11 @@
     opacity: 1;
     visibility: visible;
 }
+
 .switch-banner-login{
-    top: -100%;
+    top: -137%;
     opacity: 0;
     visibility: hidden;
-
 }
 
 
