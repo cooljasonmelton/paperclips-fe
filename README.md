@@ -1,6 +1,7 @@
 TO DO:
 
-- pick out colors f.e.
+- pick out font for f.e.
+- decide should all text be lowercase instead of capitalizing proper nouns?
 - set up back end
 - set up log in / sign up f.e.
 - set up auth & JWT

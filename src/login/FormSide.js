@@ -11,20 +11,25 @@ const FormSide = props => {
   const { signIn } = props
 
   const setWelcomeClass = () => {
-      const classArr = ["login-login"]
-      if (signIn) classArr.push("switch-login-login")
-      return classArr.join(" ")
+    const classArr = ["login-login"]
+    if (signIn) classArr.push("switch-login-login")
+    return classArr.join(" ")
   }
 
   const setCreateClass = () => {
-      const classArr = ["login-signup"]
-      if (signIn) classArr.push("switch-login-signup")
-      return classArr.join(" ")
+    const classArr = ["login-signup"]
+    if (signIn) classArr.push("switch-login-signup")
+    return classArr.join(" ")
   }
+
   return (
     <div className="FormSide">
-      <SignUp/>
-      <Login/>
+      <div className={setWelcomeClass()}>
+        <Login/>
+      </div>
+      <div className={setCreateClass()}>
+        <SignUp/>
+      </div>
     </div>
   );
 }

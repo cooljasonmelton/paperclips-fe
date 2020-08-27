@@ -8,8 +8,6 @@ import './LoginContainer.css';
 const Login = () => {
   return (
     <div className="Login cfb">
-        <h1>Sign In</h1>
-
       <form className="login-form">
       <label>
           <h5>Email:</h5>
