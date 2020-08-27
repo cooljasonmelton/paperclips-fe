@@ -16,10 +16,7 @@ const App = () => {
   return (
     <BrowserRouter>
       <div className="App">
-
-        <div className="menu-layout">
-          <Menu/> 
-        </div>
+        <Menu/> 
 
         <Switch>
           <Route path="/write" component={EntryContainer} />
