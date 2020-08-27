@@ -23,7 +23,7 @@ const Menu = props => {
   }
 
   return (
-    <div className="Menu menu-layout">
+    <div className="Menu">
       <div className="drop-nav">
         <button className="nav-button" 
           onClick={()=>setOpenDrop(!openDrop)}> 
