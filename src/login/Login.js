@@ -7,18 +7,20 @@ import './LoginContainer.css';
 
 const Login = () => {
   return (
-    <div className="Login">
-      <form>
-        <label>
-          Email:
+    <div className="Login cfb">
+        <h1>Sign In</h1>
+
+      <form className="login-form">
+      <label>
+          <h5>Email:</h5>
           <input type="text" value="" />
         </label>
         <label>
-          Password:
+          <h5>Password:</h5>
           <input type="password" value="" />
         </label>
-
-        <input type="submit" value="Submit" />
+        <br/>
+        <input className="submit-button" type="submit" value="sign in" />
       </form>
     </div>
   );

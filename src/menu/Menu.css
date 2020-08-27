@@ -10,8 +10,6 @@
     align-self: flex-start;
 }
 
-
-
 .drop-nav{
     position: relative;
 }
@@ -43,6 +41,7 @@
     box-shadow: 1px 2px 2px #780262;
     border: 1px solid #280121;
     color: #DEF2C8;
+    cursor: pointer;
 }
 
 .nav-item{
@@ -69,7 +68,9 @@
     background-color: #780262;    
     box-shadow: 1px 2px 2px #780262;
     border: 1px solid #280121;
-    color: #DEF2C8;}
+    color: #DEF2C8;
+    cursor: pointer;
+}
 
 .open-1{
     top: 2.5em;

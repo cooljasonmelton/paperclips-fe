@@ -5,12 +5,26 @@ import './LoginContainer.css';
 
 // components
 import Login from './Login';
+import SignUp from './SignUp';
 
-const FormSide = () => {
+const FormSide = props => {
+  const { signIn } = props
+
+  const setWelcomeClass = () => {
+      const classArr = ["login-login"]
+      if (signIn) classArr.push("switch-login-login")
+      return classArr.join(" ")
+  }
+
+  const setCreateClass = () => {
+      const classArr = ["login-signup"]
+      if (signIn) classArr.push("switch-login-signup")
+      return classArr.join(" ")
+  }
   return (
     <div className="FormSide">
-        <div> create account </div>
-        <Login/>
+      <SignUp/>
+      <Login/>
     </div>
   );
 }

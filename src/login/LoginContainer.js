@@ -28,7 +28,7 @@ const LoginContainer = () => {
         <BannerSide signIn={signIn} setSignIn={setSignIn}/>
       </div>
       <div className={setFormClass()}>
-        <FormSide signIn={signIn} setSignIn={setSignIn}/>
+        <FormSide signIn={signIn}/>
       </div>
     </div>
   );
