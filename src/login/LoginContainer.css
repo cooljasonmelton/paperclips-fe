@@ -15,6 +15,22 @@
     color: #780262;
 }
 
+.banner-button{
+    border: none;
+    padding: 1em;
+    font-size: 1em;
+    border-radius: 3em;
+    border: 1px solid #280121;
+    box-shadow: 1px 2px 2px #780262;
+    background-color: #780262;
+
+    color: #DEF2C8;
+    font-weight: bold;
+}
+.banner-button:focus{
+    outline: none;
+}
+
 .banner-side{
     position: absolute;
     z-index: 1;
@@ -28,12 +44,16 @@
     border: 1px solid #538320;
     box-shadow: 1px 2px 2px #538320;
 
-    background-color: #AFE07B;
-    opacity: 0.7;
-
-    opacity: 0.95;
+    background-color: rgb(175, 224, 123, 0.95);
 
     transition: 1.5s;
+}
+
+.BannerSide > div > h2{
+    background-color: rgb(175, 224, 123);
+    box-shadow: 0px 0px 5px rgb(175, 224, 123);
+    border-radius: 5em;
+    padding: 1em 0;
 }
 
 .form-side{
@@ -45,8 +65,8 @@
     height: 100%;
 
     border-radius: 0 1em 1em 0;
-    border: 1px solid gray;
-    box-shadow: 1px 2px 2px gray;
+    border: 1px solid #538320;
+    box-shadow: 1px 2px 2px #538320;
 
     background-color: #DEF2C8;
 
@@ -90,7 +110,7 @@
 
 .banner-login{
     position: absolute;
-    top: 37%;
+    top: 32%;
     width: 100%;
 
     text-align: center;
@@ -98,7 +118,7 @@
 }
 
 .switch-banner-signup{
-    top: 37%;
+    top: 32%;
     opacity: 1;
     visibility: visible;
 }

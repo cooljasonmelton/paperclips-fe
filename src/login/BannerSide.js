@@ -25,15 +25,17 @@ const BannerSide = props => {
 
             <div className={setWelcomeClass()}>
                 <h2>Welcome Back!</h2>
-                <button onClick={()=> setSignIn(!signIn)}> 
-                    Sign up!
+                <button className="banner-button"
+                    onClick={()=> setSignIn(!signIn)}> 
+                    Create Account
                 </button>
             </div>
 
             <div className={setCreateClass()}>
                 <h2>Create Account</h2>
-                <button onClick={()=> setSignIn(!signIn)}> 
-                    Sign in!
+                <button className="banner-button"
+                    onClick={()=> setSignIn(!signIn)}> 
+                    Sign In
                 </button>
             </div>
             
