@@ -39,7 +39,7 @@ const BannerSide = props => {
                 <h5>already have an account?</h5>
                 <button className="banner-button"
                     onClick={()=> setSignIn(!signIn)}> 
-                    sign in
+                    login
                 </button>
             </div>
             
