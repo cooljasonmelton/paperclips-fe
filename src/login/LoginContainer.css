@@ -190,7 +190,7 @@
 .login-signup{
     position: absolute;
     top: 25%;
-    right: 100%;
+    right: -40%;
     
     width: 100%;
 
@@ -203,7 +203,7 @@
 }
 
 .switch-login-signup{
-    top: 25%;
+    top: 27%;
     right: 0;
     opacity: 1;
     visibility: visible;
@@ -213,6 +213,7 @@
     position: absolute;
     top: 37%;
     right: 0;
+
     width: 100%;
 
     opacity: 1;
@@ -223,7 +224,8 @@
 
 .switch-login-login{
     top: 37%;
-    right: -100%;
+    right: 40%;
+
     opacity: 0;
     visibility: hidden;
 }
