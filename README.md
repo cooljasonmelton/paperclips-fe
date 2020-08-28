@@ -1,12 +1,20 @@
-TO DO:
+TO DO LIST:
 
-- pick out font for f.e.
-- decide should all text be lowercase instead of capitalizing proper nouns?
+- style entry container
 - set up back end
-- set up log in / sign up f.e.
+- set up log in / sign up functionality
 - set up auth & JWT
 - i fullcalendar
 - i chart.js
+- set up analytics container
+- style analytics container
+- refactor login css
+
+-DECIDE:
+- pick out font for f.e.
+- decide should all text be lowercase instead of capitalizing proper nouns?
+
+
 
 
 THE PLAN:
