@@ -1,39 +1,63 @@
 .EntryContainer{
-    width: 50%;
+    width: 90%;
+
+    margin: 2em;
+    border-radius: 0.5em;
+    background-color: #EFF6E0;
+    box-shadow: 1px 1px 3px black;
+
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    color: #090C08;
+    font-weight: bold;
 }
 
 .entry-ta{
-    width: 100%;
-    min-height: 70vh;
+    width: 60%;
+    min-height: 60vh;
 
     padding: 1.5em 2em;
-    margin: 1em;
 
     border: none;
-    border-radius: 0.5em;
-    box-shadow: 1px 1px 3px black;
+    background-color: #EFF6E0;
 
+    color: #090C08; 
+    font-weight: bold;
     font-size: 1.5em;
     outline: none;
     resize: none;
-    overflow: auto; 
+}
+
+.entry-info{
+    margin: 1em;
+    padding: 0.5em ;
+    border-top: 1px solid #090C08;
 
 }
 
 @keyframes entry-focus {
-    0% {box-shadow: 1px 1px 3px black}
-    33% {box-shadow: 10px 10px 10px red}
-    66% {box-shadow: -10px -10px 10px purple}
-    100% {box-shadow: 1px 1px 3px black}
+    0% {}
+    33% {}
+    66% {}
+    100% {}
 }
 
-.entry-ta:valid{
+/* .entry-ta:valid{
     animation-name: entry-focus;
     animation-duration: 0.5s;
+} */
+
+
+
+
+@media only screen and (max-width: 44em) {
+    .EntryContainer{
+        width: 100%;
+    }
+    .entry-ta{
+        width: 95%;
+    }
 }
-
-
