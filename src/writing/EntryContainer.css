@@ -1,15 +1,18 @@
 .EntryContainer{
-    width: 100%;
+    width: 95%;
 
     margin: 2em;
     border-radius: 0.5em;
-    background-color: white;
+    background-color: #7e2868;
     box-shadow: 1px 1px 3px black;
 
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    color: #def2c8;
+    font-weight: bold;
 }
 
 .entry-ta{
@@ -19,10 +22,15 @@
     padding: 1.5em 2em;
 
     border: none;
+    background-color: #7e2868;
 
+    color: #def2c8;
+    font-weight: bold;
     font-size: 1.5em;
     outline: none;
     resize: none;
+
+
 }
 
 @keyframes entry-focus {

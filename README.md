@@ -1,6 +1,7 @@
 TO DO LIST:
 
 - style entry container
+- make login inputs bigger
 - set up back end
 - set up log in / sign up functionality
 - set up auth & JWT
