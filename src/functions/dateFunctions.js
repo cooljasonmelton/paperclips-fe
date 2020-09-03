@@ -1,6 +1,6 @@
 export const currentDate = () => {
     let today = new Date();
-    let dd = String(today.getDate()).padStart(2, '0');
+    let dd = String(today.getDate());
     let mm = String(today.getMonth() + 1); 
     let yyyy = String(today.getFullYear()).substring(0,2);
     return today = mm + '/' + dd + '/' + yyyy;

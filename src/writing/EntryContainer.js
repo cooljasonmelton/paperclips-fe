@@ -19,7 +19,7 @@ const EntryContainer = () => {
         value={entryText}/>
       
       <div className="entry-info"> 
-        {`${currentDate()}  / count: ${getWordCount(entryText)}`} 
+        {`${currentDate()}  | count: ${getWordCount(entryText)}`} 
       </div>
     </div>
   );
