@@ -1,5 +1,5 @@
 .EntryContainer{
-    width: 90%;
+    width: 70%;
 
     margin: 2em;
     border-radius: 0.5em;
@@ -16,17 +16,18 @@
 }
 
 .entry-ta{
-    width: 60%;
+    width: 70%;
     min-height: 60vh;
 
-    padding: 1.5em 2em;
+    padding: 5em 2em;
 
     border: none;
     background-color: #EFF6E0;
 
     color: #090C08; 
-    font-weight: bold;
+
     font-size: 1.5em;
+    font-weight: 500;
     outline: none;
     resize: none;
 }
@@ -59,5 +60,7 @@
     }
     .entry-ta{
         width: 95%;
+        padding: 2em;
+
     }
 }

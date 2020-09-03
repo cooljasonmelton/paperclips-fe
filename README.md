@@ -1,7 +1,7 @@
 TO DO LIST:
 
-- make login inputs bigger
-- set up back end
+- - models: user, entry, prompts
+- - set up serializers or routes?
 - set up log in / sign up functionality
 - set up auth & JWT
 - i fullcalendar
@@ -9,6 +9,8 @@ TO DO LIST:
 - set up analytics container
 - style analytics container
 - refactor login css
+- unsplash for rewards
+- prompts?
 
 -DECIDE:
 - pick out font for f.e.
