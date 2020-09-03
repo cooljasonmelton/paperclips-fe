@@ -1,6 +1,5 @@
 TO DO LIST:
 
-- figure out and g resources for back end 
 - - models: user, entry, prompts
 - - set up serializers or routes?
 - set up log in / sign up functionality
@@ -11,6 +10,7 @@ TO DO LIST:
 - style analytics container
 - refactor login css
 - unsplash for rewards
+- prompts?
 
 -DECIDE:
 - pick out font for f.e.
