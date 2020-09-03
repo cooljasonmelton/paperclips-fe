@@ -26,6 +26,7 @@ const Menu = props => {
     <div className="Menu">
       <div className="drop-nav">
         <button className="nav-button" 
+          onBlur={()=> setOpenDrop(false)}
           onClick={()=>setOpenDrop(!openDrop)}> 
           paperclips 
         </button>
