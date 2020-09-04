@@ -25,13 +25,14 @@ const App = () => {
         
         {/* AUTHORIZED SITE */}
         <Menu/> 
-        {/* <Switch>
+        <Switch>
           <Route path="/write" component={EntryContainer} />
           <Route path="/analytics" component={AnalyticsContainer} />
           <Route path="/" component={LoginContainer} />
-        </Switch> */}
-
-        <Loader/>
+        </Switch>
+        
+        {/* conditionally render loader instead of switch ^^  */}
+        {/* <Loader/> */}
       </div>
     </BrowserRouter>
   );
