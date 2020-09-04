@@ -1,8 +1,7 @@
 import React from 'react';
 
 // router
-import { BrowserRouter, Route, Switch, Redirect } from 'react-router-dom';
-
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
 // styling
 import './App.css';
@@ -13,6 +12,7 @@ import AnalyticsContainer from './analytics/AnalyticsContainer'
 import EntryContainer from './writing/EntryContainer'
 import LoginContainer from './login/LoginContainer'
 import Unauthorized from './unathorized/Unauthorized'
+import Loader from './loader/Loader'
 
 const App = () => {
   return (
@@ -25,12 +25,13 @@ const App = () => {
         
         {/* AUTHORIZED SITE */}
         <Menu/> 
-        <Switch>
+        {/* <Switch>
           <Route path="/write" component={EntryContainer} />
           <Route path="/analytics" component={AnalyticsContainer} />
           <Route path="/" component={LoginContainer} />
-        </Switch>
+        </Switch> */}
 
+        <Loader/>
       </div>
     </BrowserRouter>
   );
