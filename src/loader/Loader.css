@@ -1,0 +1,33 @@
+.Loader{
+    width: 100%;
+    min-height: 50vh;
+}
+
+@keyframes spin {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+}
+
+@keyframes border-spin{
+    0% { border-top-style: dashed; }
+    25% { border-right-style: solid; }
+    50% { border-bottom-style: solid;}
+    75% { border-left-style: solid;}
+    100% { border-top-style: solid;}
+}
+
+.spin-loader{
+    width: 5em;
+    height: 5em;
+    border-radius: 50%;
+    border: 0.5em dashed #5d1a4c;
+    background-color: #def2c8;
+    color: #5d1a4c;
+    font-weight: bold;
+    font-size: 1.5em;
+    animation-name: border-spin;
+    animation-duration: 2s; 
+    animation-iteration-count: infinite;
+}
+
+
