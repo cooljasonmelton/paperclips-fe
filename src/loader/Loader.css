@@ -8,25 +8,15 @@
     to {transform: rotate(360deg);}
 }
 
-@keyframes border-spin{
-    0% { border-top-style: dashed; }
-    25% { border-right-style: solid; }
-    50% { border-bottom-style: solid;}
-    75% { border-left-style: solid;}
-    100% { border-top-style: solid;}
-}
-
 .spin-loader{
     width: 2.5em;
     height: 2.5em;
 
     border: 1em solid #def2c8;
-    border-radius: 50%;
     border-top-color: #5d1a4c;
+    border-radius: 50%;
     
-    animation-name: spin;
-    animation-duration: 1.5s; 
-    animation-iteration-count: infinite;
+    animation: 1.75s infinite steps(50) spin;
 }
 
 

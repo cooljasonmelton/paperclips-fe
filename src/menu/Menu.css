@@ -2,7 +2,7 @@
     position: relative;
     z-index: 10;
 
-    margin: 2em 0 0 4em;
+    margin: 2em 0 2em 4em;
     width: 100%;
 
     display: flex;
@@ -72,4 +72,11 @@
 }
 .open-3{
     top: 7.5em;
+}
+
+
+@media only screen and (max-width: 44em) {
+    .Menu{
+        margin: 2em 25% 0;
+    }
 }

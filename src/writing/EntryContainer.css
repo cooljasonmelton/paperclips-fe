@@ -46,14 +46,6 @@
     100% {}
 }
 
-/* .entry-ta:valid{
-    animation-name: entry-focus;
-    animation-duration: 0.5s;
-} */
-
-
-
-
 @media only screen and (max-width: 44em) {
     .EntryContainer{
         width: 100%;
@@ -61,6 +53,5 @@
     .entry-ta{
         width: 95%;
         padding: 2em;
-
     }
 }
