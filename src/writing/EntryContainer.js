@@ -5,7 +5,7 @@ import { currentDate } from "../functions/dateFunctions"
 import { getWordCount } from "../functions/wordCountFunctions"
 
 // styling
-import './EntryContainer.css';
+import './Write.css';
 
 // components
 

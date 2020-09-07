@@ -1,0 +1,122 @@
+/* WRITE CONTAINER */
+.Write{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+/* ENTRY CONTAINER */
+.EntryContainer{
+    width: 70%;
+    min-height: 30em;
+
+    margin: 0 2em;
+    border-radius: 0.5em;
+    background-color: #EFF6E0;
+    box-shadow: 1px 1px 3px black;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    color: #090C08;
+    font-weight: bold;
+}
+
+.entry-ta{
+    width: 70%;
+    height: 100%;
+
+    padding: 5em 2em;
+
+    border: none;
+    background-color: #EFF6E0;
+
+    color: #090C08; 
+
+    font-size: 1.5em;
+    font-weight: 500;
+    outline: none;
+    resize: none;
+}
+
+.entry-info{
+    margin: 1em;
+    padding: 0.5em ;
+    border-top: 1px solid #090C08;
+
+}
+
+/* REWARD CONTAINER */
+.RewardContainer{
+    width: 30%;
+    margin: 0 2em;
+}
+
+.rew-carousel{
+    position: relative;
+    min-height: 80%;
+
+    border: 1em solid #5d1a4c;
+    background-color: #5d1a4c;    
+    border-radius: 0.5em;
+
+    overflow: hidden;
+}
+
+.rew-img{
+    position: absolute;
+    top: calc(0% + -0.2em);
+
+    width: calc(100% + 0.2em);
+    border-radius: 0.5em;
+
+    transition: 1s;
+}
+
+.rew-img.active{
+    left: calc(0% + -0.1em);
+}
+.rew-img.next{
+    left: -125%;
+}
+.rew-img.prev{
+    left: 125%;
+}
+
+.rew-controls{
+    flex-direction: row;
+    margin-top: 1em;
+}
+
+.rew-button{}
+.rew-button.next{}
+.rew-button.prev{}
+
+
+
+
+/* RESPONSIVITY */
+@media only screen and (max-width: 44em) {
+    .Write{
+        flex-direction: column;
+        justify-content: flex-start;
+        height: 200vh;
+    }
+    .RewardContainer{
+        width: 100%;
+        margin: 2em 0;
+        min-height: 40%;
+    }
+    .EntryContainer{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    .entry-ta{
+        width: 95%;
+    }
+
+}
