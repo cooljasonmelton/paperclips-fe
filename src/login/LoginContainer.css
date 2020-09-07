@@ -97,7 +97,6 @@
     border-radius: 0 1em 1em 0;
 }
 
-
 @media only screen and (max-width: 44em) {
     .LoginContainer{
         width: 100%;

@@ -25,19 +25,23 @@ const RewardContainer = () => {
 
     return (
         <div className="RewardContainer">
-            <div className="rew-carousel">
+            <div className="rew-carousel cfb">
                 <img className={setClass(1)} src={cutePic} />  
                 <img className={setClass(2)} src={cutePic} />      
                 <img className={setClass(3)} src={cutePic} />     
-                <div className="rew-controls">
-                    <button className="rew-button"> 
-                        {"<"} 
-                    </button>
-                    <button className="rew-button"> 
-                        {">"} 
-                    </button> 
-                </div> 
             </div>
+            <div className="rew-controls cfb">
+                <button className="rew-button prev"
+                    onClick={() => setRewardNum(rewardNum - 1)}
+                    disabled={rewardNum <= 1}> 
+                    {"<"} 
+                </button>
+                <button className="rew-button next"
+                    onClick={() => setRewardNum(rewardNum + 1)}
+                    disabled={rewardNum >= 3}>  {/* when i have reg images, set to imgs length */}
+                    {">"} 
+                </button> 
+            </div> 
         </div>
     );
 }

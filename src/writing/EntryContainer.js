@@ -8,7 +8,6 @@ import { getWordCount } from "../functions/wordCountFunctions"
 import './Write.css';
 
 // components
-import RewardContainer from './RewardContainer'
 
 const EntryContainer = () => {
   const [entryText, setEntryText] = useState('')
