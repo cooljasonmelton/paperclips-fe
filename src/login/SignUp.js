@@ -1,15 +1,33 @@
-import React, {useState} from 'react';
+import React, {useState, useEffect} from 'react';
 
 // styling
 import './LoginContainer.css';
 
-// components
-
 const SignUp = () => {
+  // form inputs
   const [name, setName] = useState('')
   const [email, setEmail] = useState('')
   const [goal, setGoal] = useState('')
   const [password, setPassword] = useState('')
+
+  // fetch
+  const [response, setResponse] = useState(null)
+  const [loading, setLoading] = useState(false)
+  const [hasError, setHasError] = useState(false)
+
+
+  // useEffect(() => {
+  //   setLoading(true)
+  //   fetch(url, opts)
+  //       .then((res) => {
+  //       setResponse(res.data)
+  //       setLoading(false)
+  //   })
+  //       .catch(() => {
+  //           setHasError(true)
+  //           setLoading(false)
+  //       })
+  // }, [ url ])
 
   return (
     <div className="SignUp cfb">   
@@ -43,7 +61,6 @@ const SignUp = () => {
         <br/>
         <input className="submit-button" type="submit" value="sign up" />
       </form>
-
     </div>
   );
 }
